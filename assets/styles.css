@@ -2,28 +2,23 @@
   --plate-radius: 25px;
 }
 
+
 .cup-canvas {
   display: flex;
   flex-basis: 100%;
-  max-width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .cup-wrapper {
-  display: block;
+  background-color: green;
   width: 100%;
   max-width: 400px;
   height: 300px;
 }
 
-.cup, 
-.plate, 
-.handle { 
-  background-color: black; 
-}
-
+.cup, .plate, .handle { background-color: black; }
 
 .cup-container {
   display: flex;
@@ -31,12 +26,11 @@
   height: 200px;
   flex-direction: row;
   justify-content: strech;
-  padding-bottom: 10px;
+  padding-bottom: calc(var(--plate-radius) * 0.75);
 }
 
 .column {
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 auto;
 }
 
 .cup {
@@ -50,7 +44,6 @@
   align-items: center;
   self-align: top;
   height: 70%;
-  flex-grow: 1;
   border-top-right-radius: calc(var(--plate-radius) * 2.5);
   border-bottom-right-radius: calc(var(--plate-radius) * 2.5);
 }
@@ -64,8 +57,7 @@
 }
 
 .plate {
-  flex-grow: 1;
-  flex-basis: 100%;
+  flex: 1 1 100%;
   height: 10px;
   padding: 20px;
   border-bottom-left-radius: calc(var(--plate-radius) * 1.5);
