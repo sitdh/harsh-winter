@@ -9,10 +9,10 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .cup-wrapper {
-  background-color: green;
   width: 100%;
   max-width: 400px;
   height: 300px;
